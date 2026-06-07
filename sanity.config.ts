@@ -10,8 +10,9 @@ export default defineConfig({
   title: 'Restaurant App',
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
+  basePath: '/studio',
   plugins: [structureTool()],
   schema: {
-    types: [reservation, menuItem, contactMessage,category],
+    types: [reservation, menuItem, contactMessage, category],
   },
 })
